@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;  
+}
+body{
+    background-image: url("day.jpg");
+    height: 100vh;
+}
+h1,h2,h3,h4,h5,span,p {
+    color: rgb(55 55 55);
+    font-family: 'Lato', sans-serif;
+}
+.heading{
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+.container{
+    margin: auto;
+    width: 50%; 
+    align-content: center;
+}
+.info{
+    display: flex;
+    height: 42px;
+}
+.info > * {
+    flex-basis: 20%;
+}
+.info .city {
+    flex-basis: 100%;
+}
+.region{
+    display: grid;
+    margin-top: 18px;
+    gap: 5px;
+}
+
+form{
+    display: grid;
+    margin-top: 5rem;
+}
+input{
+    height: 32px;
+    flex-basis:80%;
+    border-radius: 8px;
+    background: rgb(0 0 0 / 35%);
+    color: white;
+}
+input::placeholder{
+    color: rgb(189, 189, 189);   
+}
+.input{
+    display: flex;
+    
+}
+#btn{
+    border: none;
+    background: transparent;
+    flex-basis: 10%;
+    margin-left: 10px;
+    cursor: pointer;
+}  
+.output{
+    box-shadow: 0 15px 35px rgb(0 0 0 / 50%);
+    background: rgb(255 255 255 / 40%);
+    border-radius: 15px;
+    padding: 15px;
+    width: 100%;
+    margin-top: 30px;
+    display: table;
+}
+input{
+    border:none;
+    width: 100%;
+}
+.next_days{
+    width: 100%;
+    display: inline-flex;
+}
+.next_days div {
+    display: inline-block;
+    height: 100%;
+    flex: 1 100%;
+    text-align: center;
+}
+.next_days p {
+    overflow: hidden;
+}
+@media only screen and (max-width: 600px) {
+    .container {
+      width: 80%;
+    }
+
+  }
+  @media only screen and (max-width: 600px) {
+    .info{
+        display: flex;
+        height: auto;
+    }
+  }  
